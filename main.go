@@ -6,6 +6,9 @@ import (
 	array "github.com/jiharal/mbojo/array"
 	channel "github.com/jiharal/mbojo/channel"
 	math "github.com/jiharal/mbojo/math"
+	"github.com/jiharal/mbojo/mutex"
+	"github.com/jiharal/mbojo/shortt"
+	"github.com/jiharal/mbojo/words"
 )
 
 func main() {
@@ -18,5 +21,13 @@ func main() {
 	// Channel
 	channel.ChannelBasic()
 	channel.ChannelAsATypeAndParam()
+
+	// Muter
+	fmt.Println(mutex.RaceConditions())
+
+	// Words
+	fmt.Println(words.Func1("abcdedcba"))
+	// func QuickShort
+	fmt.Println(shortt.QuickShortTypeInt([]int{1, 3, 4, 2, 3, 22, 3}))
 
 }
