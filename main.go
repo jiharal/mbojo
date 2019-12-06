@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 
-	array "github.com/jiharal/mbojo/array"
+	"github.com/jiharal/mbojo/anagram"
+	"github.com/jiharal/mbojo/array"
 	"github.com/jiharal/mbojo/basic"
-	channel "github.com/jiharal/mbojo/channel"
-	math "github.com/jiharal/mbojo/math"
+	"github.com/jiharal/mbojo/channel"
+	"github.com/jiharal/mbojo/math"
 	"github.com/jiharal/mbojo/mutex"
 	"github.com/jiharal/mbojo/shortt"
 	"github.com/jiharal/mbojo/words"
@@ -32,6 +33,9 @@ func main() {
 	fmt.Println(shortt.QuickShortTypeInt([]int{1, 3, 4, 2, 3, 22, 3}))
 
 	//  FizzBuzz
-	basic.FizzBuzzWithSwitch(17)
-	basic.FizzBuzzWithIf(17)
+	basic.FizzBuzzWithSwitch(3)
+	basic.FizzBuzzWithIf(3)
+
+	// Anagram
+	fmt.Println(anagram.Anagram("xaxbbbxx"))
 }
