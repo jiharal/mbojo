@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	array "github.com/jiharal/mbojo/array"
+	"github.com/jiharal/mbojo/basic"
 	channel "github.com/jiharal/mbojo/channel"
 	math "github.com/jiharal/mbojo/math"
 	"github.com/jiharal/mbojo/mutex"
@@ -30,4 +31,7 @@ func main() {
 	// func QuickShort
 	fmt.Println(shortt.QuickShortTypeInt([]int{1, 3, 4, 2, 3, 22, 3}))
 
+	//  FizzBuzz
+	basic.FizzBuzzWithSwitch(17)
+	basic.FizzBuzzWithIf(17)
 }
